@@ -13,7 +13,7 @@ export class Pokemon {
 
   public attack(otherPokemon: Pokemon) {
     const damageDealt = otherPokemon.receiveDamage(this.damage);
-    console.log(this.name + " attacks " + otherPokemon.name + " and deals " + damageDealt + "damage");
+    console.log(`${this.name} attacks ${otherPokemon.name} and deals ${damageDealt} damage"`);
   }
 
   public receiveDamage(damage: number): number {
@@ -24,5 +24,8 @@ export class Pokemon {
 
   public showHealth(): void {
     console.log(`${this.name} has ${this.health} health`);
+    if (this.health === 0) {
+      console.log(`${this.name} is dead`)
+    }
   }
 }
