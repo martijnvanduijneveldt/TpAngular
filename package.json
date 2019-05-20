@@ -5,7 +5,9 @@
   "description": "Pokemons",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "tsc": "node ./node_modules/typescript/bin/tsc",
+    "mocha": "node ./node_modules/mocha/bin/mocha",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,13 @@
     "url": "https://github.com/martijnvanduijneveldt/TpAngular/issues"
   },
   "homepage": "https://github.com/martijnvanduijneveldt/TpAngular#readme",
-  "dependencies": {
-    "jest": "^24.8.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
   }
 }
