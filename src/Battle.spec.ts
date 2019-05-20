@@ -14,11 +14,11 @@ describe('Create Battle', () => {
 
   it('Get fist attacker - same speed', () => {
     // Infos from pokeapi
-    const firstPokemon = new Pokemon("FakePoke", 45, 10, 10);
-    const secondPokemon = new Pokemon("FakePoke", 45, 10, 10);
+    const firstPokemon = new Pokemon("FakePoke1", 45, 10, 10);
+    const secondPokemon = new Pokemon("FakePoke2", 45, 10, 10);
 
     let battle = new Battle(firstPokemon, secondPokemon);
-    expect(battle.getFirstAttacker(() => 0.5)).toBe(firstPokemon);
+    expect(battle.getFirstAttacker(() => 0.6)).toBe(firstPokemon);
 
     battle = new Battle(firstPokemon, secondPokemon);
     expect(battle.getFirstAttacker(() => 0.5)).toBe(secondPokemon);
