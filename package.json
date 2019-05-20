@@ -1,0 +1,26 @@
+{
+  "name": "tpangular",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pokemons",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martijnvanduijneveldt/TpAngular.git"
+  },
+  "keywords": [
+    "Pokemon"
+  ],
+  "author": "Martijn van Duijneveldt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martijnvanduijneveldt/TpAngular/issues"
+  },
+  "homepage": "https://github.com/martijnvanduijneveldt/TpAngular#readme",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
