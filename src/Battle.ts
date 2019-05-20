@@ -9,7 +9,11 @@ export class Battle {
     this.pokemon2 = pokemon2;
   }
 
-  getFirstAttacker(): Pokemon {
+  getFirstAttacker(random: () => number = Math.random): Pokemon {
+    if (this.pokemon1.speed === this.pokemon2.speed) {
+      return random() > 0.5 ? this.pokemon1 : this.pokemon2;
+    }
+
     return this.pokemon1.speed >= this.pokemon2.speed ? this.pokemon1 : this.pokemon2;
   }
 
