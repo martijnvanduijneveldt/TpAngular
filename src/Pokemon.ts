@@ -13,7 +13,7 @@ export class Pokemon {
 
   public attack(otherPokemon: Pokemon) {
     const damageDealt = otherPokemon.receiveDamage(this.damage);
-    console.log(`${this.name} attacks ${otherPokemon.name} and deals ${damageDealt} damage"`);
+    console.log(`${this.name} attacks ${otherPokemon.name} and deals ${damageDealt} damage`);
   }
 
   public receiveDamage(damage: number): number {

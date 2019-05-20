@@ -5,6 +5,7 @@
   "description": "Pokemons",
   "main": "index.js",
   "scripts": {
+    "start":"ts-node src/index.ts",
     "tsc": "node ./node_modules/typescript/bin/tsc",
     "test": "jest"
   },
